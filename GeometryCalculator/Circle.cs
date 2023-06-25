@@ -6,12 +6,12 @@ namespace GeometryLibrary
     {
         private double _radius;
 
-        //public Circle()
-        //{
-        //    SetRadius(5);
-        //}
+        public Circle()
+        {
+            SetRadius(5);
+        }
 
-        public Circle(double radius = 5)
+        public Circle(double radius)
         {
             SetRadius(radius);
         }
