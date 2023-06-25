@@ -6,17 +6,17 @@ namespace GeometryLibrary
     {
         private double _radius;
 
-        public Circle()
-        {
-            SetRadius(5);
-        }
+        //public Circle()
+        //{
+        //    SetRadius(5);
+        //}
 
-        public Circle(double radius)
+        public Circle(double radius = 5)
         {
             SetRadius(radius);
         }
 
-        public void SetRadius(double radius = 5)
+        public void SetRadius(double radius)
         {
             if (radius <= 0)
             {
