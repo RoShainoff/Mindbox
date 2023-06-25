@@ -8,6 +8,11 @@ namespace GeometryLibrary
         private double side2;
         private double side3;
 
+        public Triangle()
+        {
+            SetSides(3, 4, 5);
+        }
+
         public Triangle(double side1, double side2, double side3)
         {
             SetSides(side1, side2, side3);

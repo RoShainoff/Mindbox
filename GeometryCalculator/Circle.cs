@@ -4,31 +4,36 @@ namespace GeometryLibrary
 {
     public class Circle : Figure
     {
-        private double radius;
+        private double _radius;
+
+        public Circle()
+        {
+            SetRadius(5);
+        }
 
         public Circle(double radius)
         {
             SetRadius(radius);
         }
 
-        public void SetRadius(double radius)
+        public void SetRadius(double radius = 5)
         {
             if (radius <= 0)
             {
                 throw new ArgumentException("Радиус должен быть положительным числом");
             }
 
-            this.radius = radius;
+            this._radius = radius;
         }
 
         public override double GetArea()
         {
-            return Math.PI * Math.Pow(radius, 2);
+            return Math.PI * Math.Pow(_radius, 2);
         }
 
         public override string ToString()
         {
-            return $"Радиус круга составляет {radius}, а площадь - {GetArea()}";
+            return $"Радиус круга составляет {_radius}, а площадь - {GetArea()}";
         }
     }
 }
